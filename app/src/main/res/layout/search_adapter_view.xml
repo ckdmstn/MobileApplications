@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/blogBtn"
+        android:layout_width="87dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="4dp"
+        android:background="#00C1C1C1"
+        android:backgroundTint="#C1C1C1"
+        android:onClick="onClick"
+        android:text="블로그 보기"
+        android:textColor="#353333"
+        android:textSize="8sp"
+        android:clickable="false"
+        android:focusable="false"
+        app:backgroundTint="#C1C1C1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapBtn" />
+
+    <Button
+        android:id="@+id/mapBtn"
+        android:layout_width="87dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="4dp"
+        android:background="#00C1C1C1"
+        android:backgroundTint="#C1C1C1"
+        android:onClick="onClick"
+        android:text="위치 보기"
+        android:textColor="#353333"
+        android:textSize="8sp"
+        android:clickable="false"
+        android:focusable="false"
+        app:backgroundTint="#C1C1C1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSearchTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="동덕여자대학교"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSearchAddress"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="서울특별시 성북구 화랑로13길 60"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/tvSearchTitle" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주소 : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSearchTitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>
